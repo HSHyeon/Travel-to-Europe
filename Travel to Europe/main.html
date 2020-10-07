@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<link  rel="stylesheet" type="text/css" href="extern.css"/> <!--외부스타일시트 지정-->
+</head>
+
+<body>
+<div id="wrapper">  <!--사이트 크기 맞추기-->
+
+<header>
+<span><a href="signup.html" target="_blank">회원가입</a></span>
+<span>|</span>
+<span><a href="login.html" target="_blank">로그인</a></span>
+
+<a href="#home"><img src="https://image.flaticon.com/icons/svg/25/25282.svg" id="up" width="30" height="30"></a> <!--위로가기-->
+<h2><a href="main.html" id="home">TRAVEL TO EUROPE</a></h2>
+
+<hr/>
+
+<nav><strong> <!--카테고리---->
+<a href="england.html" target="display_area">ENGLAND</a>
+<a href="france.html" target="display_area">FRANCE</a>
+<a href="germany.html" target="display_area">GERMANY</a>
+<a href="austria.html" target="display_area">AUSTRIA</a>
+<a href="hungary.html" target="display_area">HUNGARY</a></strong>
+</nav>
+
+<img src="익스피디아_이탈리아_로마.jpg"
+name="" width="1100px" height="400px"/> <!--사이트 디자인용-->
+
+</header>
+
+<br><hr/>
+<article>
+
+	<input type="button" id="time" value="세계 표준 시간(GMT) 알아보기"/> <!--자바스크립트 인터렉션 기능에 쓰일 버튼--><br>
+	<iframe name="display_area" src="" width="1078px" height="500px"></iframe> <!--게시글 나타날 곳-->
+
+</article>
+
+	<fieldset style="display:inline; padding:10px; position:relative ; left:38%; border:none">환율계산기 | 
+	<input type="button" value="유로 계산" id="euro"/>
+	<input type="button" value="파운드 계산" id="pound"/>
+	</fieldset>
+	
+<script type="text/javascript">
+
+	var today=new Date();
+	var y=today.getFullYear();
+	var m=today.getMonth();
+	var d=today.getDate();
+	var hr=today.getHours()-9;
+	var min=today.getMinutes();
+	
+	if(hr<1)
+	{
+		d=d-1;
+		hr=hr+24;
+	}
+ 
+	var str=y+"년 "+m+"월 "+d+"일 "+hr+"시 "+m+"분";
+	
+	document.getElementById("time").onclick=Time_Europe;	
+	document.getElementById("euro").onclick=euro_cal;
+	document.getElementById("pound").onclick=pound_cal;
+
+	function Time_Europe(){
+	document.getElementById("time").value=str;
+	}
+	
+	function euro_cal(){
+	var won=prompt("환율할 원화량을 입력하세요");
+	var euro=Math.round(won/1324);
+	alert(won+"원은"+euro+"유로입니다.");
+	}
+	
+	function pound_cal(){
+	var won=prompt("환율할 원화량을 입력하세요");
+	var pound=Math.round(won/1502);
+	alert(won+"원은"+pound+"파운드입니다.");
+	}
+
+</script>
+
+<br><hr><br>
+
+<footer> <!--장식용-->
+&nbsp;
+<img src="https://postfiles.pstatic.net/MjAxOTA0MTJfMjM4/MDAxNTU0OTk1OTE4MDAw.oKTUTJY3HSWaWHq9Z1ob9IflwKXqe0D1aHNchZ7x6Qwg.hts-YhaVvC2aXK_zrV6di6jsdXwUtYsnCZWxJYYGsSwg.JPEG.alice0937/4.jpg?type=w773" height="100" width="150"/>
+<img src="https://postfiles.pstatic.net/MjAxOTA0MTJfNjMg/MDAxNTU0OTk1OTE4MDYy.v9hacBMDuWbVx-YpcRfUQxonxKOLug6S40mWaw5SNUsg.pF6hK5wAO_9SeceCUHyVq598s5asgT9W1CH0XATbKkAg.JPEG.alice0937/3.jpg?type=w773" height="100" width="150"/>
+<img src="https://postfiles.pstatic.net/MjAxOTA0MTJfMTM2/MDAxNTU0OTk1OTE4MDkx.KaoPGEhSeovI0F_P3_bIHsHlTm8eJ1_Fcdqgf-oluHUg.MI2AnWHuqhExKj-KnSkM0YVkdKbOk78pqVZMLoDvg7wg.JPEG.alice0937/2.jpg?type=w773" height="100" width="150"/>
+<img src="https://postfiles.pstatic.net/MjAxOTA0MTJfMjA1/MDAxNTU0OTk1OTE4NDgz.1dZ2trzfgfDVxAoBeI29CaugpA9NIHd7zDum-m9DoZMg.YDuvhldlN0fvqOCY3JGOMnUm-KMjvwZ1ClJC_fZ89Wcg.JPEG.alice0937/5.jpg?type=w773" height="100" width="150"/>
+<img src="https://postfiles.pstatic.net/MjAxOTA0MTJfNzYg/MDAxNTU0OTk1OTE4MDkx.nGq4uxFi7fi9RbzaAwvNQqC9tfxR7q8h_ggKYZO44JQg.q3DocqD6BrPRmwI6RhjMw9yUx9LscPM1gsGJAls_Pgog.JPEG.alice0937/7.jpg?type=w773" height="100" width="150"/>
+<img src="https://postfiles.pstatic.net/MjAxOTA0MTJfNzEg/MDAxNTU0OTk1OTE4MTI3.K_VjcnWQwUa81d-LbwYMrdDOSD4jWrOMccHSBChp_tMg.jv6evy6ELYvaCv-hgeyy_mMz5oZvgpl8j7rRaVj9BNUg.JPEG.alice0937/6.jpg?type=w773" height="100" width="150"/>
+<img src="https://postfiles.pstatic.net/MjAxOTA0MTJfMjMz/MDAxNTU0OTk1OTE4MTI2.EaxIQpQdIzk5bLN8TWEV6JB3KnZst7mY6ciji2kPHRcg.2I4qC8LdpktqjDDdFEPCc5nRFoXnwKsNAmySemmjoPYg.JPEG.alice0937/1.jpg?type=w773" height="100" width="150"/>
+
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+h2{text-align:center ; font-family:"algerian"   ;
+padding:5px ; margin-top:40px ; margin-bottom:0px ; margin-left:5px ; margin-right:5px}
+
+article input{border:1.5px solid #9999FF ; color:#9999FF ; padding:10px ; background-color:white; display: table; margin-left: auto; margin-right: auto;
+font-size:15px; font-family:"맑은 고딕";font-weight:bold;opacity:0.8}
+
+fieldset input{border:1.5px solid #9999FF ; color:#9999FF ; padding:10px ; background-color:white;
+font-size:15px;margin:0px; font-family:"맑은 고딕";font-weight:bold;opacity:0.8}
+
+header span{float:right; margin-top:5px; margin-bottom:0px;margin-right:0px ; margin-left:0px; color:black; font-size:12px;}
+
+nav strong{top: 20px; right:30px ;font-size:15px; display:block ;
+text-align:center  ;
+padding:7px ; margin-top:10px }
+
+p{text-align:center ; font-family:"맑은 고딕" ; font-size: 15px; line-height:40px}
+hr{width:70%}
+
+footer img{opacity:0.7 ; margin:0px}
+footer img:hover{transition:0.5s ; opacity:1.0}
+
+header img{position:center ; margin-top:5px ; margin-bottom:0px ;opacity: 0.8}
+img:hover{transition:0.5s ; opacity:1.0}
+
+input:hover{transition:0.3s; background-color:#EEEEEE;opacity:1.0}
+
+a{text-align:center ; padding:10px ; margin:15px ; text-decoration:none}
+a:link{color:#566270}
+a:visited{color:#566270}
+
+h2 a:link{color:black}
+h2 a:visited{color:bck}
+
+article{color:#566270 ; font-size:15px  ; display:block ;
+text-align:center;
+padding:10px ; margin-top:10px; }
+
+iframe{border:none; text-align:center}
+
+#up{position: fixed; bottom: 20px; right:20px}
+
+#wrapper{
+  width:1100px;
+  margin: 0 auto;
+}
+

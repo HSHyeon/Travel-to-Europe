@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style type="text/css">   
+#wrapper{
+  width:1100px;
+  margin: 0 auto;
+}
+#wrapper{position: fixed; top:200px; left:40%}
+fieldset{display:inline;padding: 20px}
+</style>
+</head>
+<body>
+<div id="wrapper"> 
+
+<form method="get" action="signup.php">
+<fieldset>
+<legend>회원가입 하세요</legend>
+ 이  &nbsp;&nbsp;&nbsp; 름 : <input type="text" name="name" size="35"/><br>
+ 아 이 디 : <input type="text" name="id" id="i_d" size="30"/><input type="button" value="중복확인"><br>
+ 이 메 일 : <input type="email" name="email" placeholder=" ****@***.***형식으로 입력하세요." size="35"/><br>
+비밀번호 : <input type="password" name="pwd" size="35"/><br><br>
+
+<button type="submit" id="submit">확인</button>
+<button type="reset">취소</button>
+</fieldset><br><br>
+
+
+</body>
+</html>
