@@ -1,7 +1,7 @@
 # Travel-to-Europe
 
 ### Language
-`JavaScript`,'HTML','CSS','PHP'
+`JavaScript`,`HTML`,`Php`,`CSS`
 
 
 
