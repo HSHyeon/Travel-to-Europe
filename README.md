@@ -8,6 +8,6 @@
 ### Language
 `JavaScript`,`HTML`,`Php`,`CSS`
 
-
+로그인, 회원가입 구현x
 
 ### Main Contents
