@@ -8,6 +8,9 @@
 ### Language
 `JavaScript`,`HTML`,`Php`,`CSS`
 
-로그인, 회원가입 구현x
+### Todo
+- 로그인, 회원가입 구현
+- 안보이는 이미지 수정
+- 컨텐츠 업데이트
 
 ### Main Contents
